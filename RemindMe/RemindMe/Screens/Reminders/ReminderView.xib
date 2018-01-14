@@ -31,6 +31,9 @@
                 <constraint firstItem="fOw-H3-HcS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="pxb-z2-Vcy"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="label" destination="fOw-H3-HcS" id="hDX-9o-Vkx"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="-231.5"/>
         </view>
     </objects>

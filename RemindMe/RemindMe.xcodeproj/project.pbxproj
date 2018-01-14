@@ -15,6 +15,11 @@
 		5724C4591FFA73B300BB0FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5724C4561FFA73B300BB0FD4 /* Assets.xcassets */; };
 		5724C45C1FFA7C1300BB0FD4 /* ReminderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5724C45B1FFA7C1300BB0FD4 /* ReminderView.xib */; };
 		5724C45E1FFA7C2600BB0FD4 /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5724C45D1FFA7C2600BB0FD4 /* ReminderView.swift */; };
+		572C03D61FFBB1B300D27846 /* UIView+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C03D51FFBB1B300D27846 /* UIView+utils.swift */; };
+		57B7D00E200B74E000DEA24A /* CreateReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7D00D200B74E000DEA24A /* CreateReminderViewController.swift */; };
+		57B7D010200B758500DEA24A /* CreateReminderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B7D00F200B758500DEA24A /* CreateReminderViewController.storyboard */; };
+		57BEDB4C200B9497008D11AC /* CreateReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BEDB4B200B9497008D11AC /* CreateReminderViewModel.swift */; };
+		57BEDB4E200B9549008D11AC /* CreateReminderViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BEDB4D200B9549008D11AC /* CreateReminderViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		5724C4561FFA73B300BB0FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5724C45B1FFA7C1300BB0FD4 /* ReminderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderView.xib; sourceTree = "<group>"; };
 		5724C45D1FFA7C2600BB0FD4 /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
+		572C03D51FFBB1B300D27846 /* UIView+utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+utils.swift"; sourceTree = "<group>"; };
+		57B7D00D200B74E000DEA24A /* CreateReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderViewController.swift; sourceTree = "<group>"; };
+		57B7D00F200B758500DEA24A /* CreateReminderViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateReminderViewController.storyboard; sourceTree = "<group>"; };
+		57BEDB4B200B9497008D11AC /* CreateReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderViewModel.swift; sourceTree = "<group>"; };
+		57BEDB4D200B9549008D11AC /* CreateReminderViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,7 @@
 		5724C41D1FFA71C200BB0FD4 /* RemindMe */ = {
 			isa = PBXGroup;
 			children = (
+				572C03D41FFBB19500D27846 /* Support */,
 				5724C4551FFA73B300BB0FD4 /* Resource */,
 				5724C4491FFA73A000BB0FD4 /* Screens */,
 				5724C4521FFA73B300BB0FD4 /* Main */,
@@ -69,7 +80,8 @@
 		5724C4491FFA73A000BB0FD4 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				5724C45A1FFA7BCE00BB0FD4 /* RemindersViewControoler */,
+				57B7D00C200B74A600DEA24A /* CreateReminder */,
+				5724C45A1FFA7BCE00BB0FD4 /* Reminders */,
 				5724C44A1FFA73A000BB0FD4 /* LaunchScreen.storyboard */,
 			);
 			path = Screens;
@@ -92,7 +104,7 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		5724C45A1FFA7BCE00BB0FD4 /* RemindersViewControoler */ = {
+		5724C45A1FFA7BCE00BB0FD4 /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
 				5724C44C1FFA73A000BB0FD4 /* Main.storyboard */,
@@ -100,7 +112,26 @@
 				5724C45B1FFA7C1300BB0FD4 /* ReminderView.xib */,
 				5724C45D1FFA7C2600BB0FD4 /* ReminderView.swift */,
 			);
-			path = RemindersViewControoler;
+			path = Reminders;
+			sourceTree = "<group>";
+		};
+		572C03D41FFBB19500D27846 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				572C03D51FFBB1B300D27846 /* UIView+utils.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		57B7D00C200B74A600DEA24A /* CreateReminder */ = {
+			isa = PBXGroup;
+			children = (
+				57BEDB4D200B9549008D11AC /* CreateReminderViewModelProtocol.swift */,
+				57BEDB4B200B9497008D11AC /* CreateReminderViewModel.swift */,
+				57B7D00D200B74E000DEA24A /* CreateReminderViewController.swift */,
+				57B7D00F200B758500DEA24A /* CreateReminderViewController.storyboard */,
+			);
+			path = CreateReminder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5724C45C1FFA7C1300BB0FD4 /* ReminderView.xib in Resources */,
+				57B7D010200B758500DEA24A /* CreateReminderViewController.storyboard in Resources */,
 				5724C44F1FFA73A000BB0FD4 /* LaunchScreen.storyboard in Resources */,
 				5724C4501FFA73A000BB0FD4 /* Main.storyboard in Resources */,
 				5724C4591FFA73B300BB0FD4 /* Assets.xcassets in Resources */,
@@ -177,8 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57BEDB4E200B9549008D11AC /* CreateReminderViewModelProtocol.swift in Sources */,
 				5724C4571FFA73B300BB0FD4 /* AppDelegate.swift in Sources */,
+				57B7D00E200B74E000DEA24A /* CreateReminderViewController.swift in Sources */,
+				57BEDB4C200B9497008D11AC /* CreateReminderViewModel.swift in Sources */,
 				5724C4511FFA73A000BB0FD4 /* RemindersViewController.swift in Sources */,
+				572C03D61FFBB1B300D27846 /* UIView+utils.swift in Sources */,
 				5724C45E1FFA7C2600BB0FD4 /* ReminderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
