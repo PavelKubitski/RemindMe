@@ -9,18 +9,22 @@ class RemindersViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Напоминания"
+        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "DefaultCell")
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
                                                             target: self,
                                                             action: #selector(onAddButtonDidPressed))
-        
     }
 
     @objc
     private func onAddButtonDidPressed() {
-        let screen = CreateReminderViewController.create()
-        navigationController?.pushViewController(screen, animated: true)
+        guard let navController = navigationController else {
+            return
+        }
+        
+        CreateReminderViewController.push(navController)
     }
     
     // MARK: - Table view

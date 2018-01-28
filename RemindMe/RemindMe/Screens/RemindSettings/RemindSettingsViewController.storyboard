@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Remind Settings View Controller-->
+        <scene sceneID="gPW-26-MCI">
+            <objects>
+                <viewController storyboardIdentifier="RemindSettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dPM-3x-je0" customClass="RemindSettingsViewController" customModule="RemindMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9a9-t3-KhE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlI-mZ-r2A">
+                                <rect key="frame" x="0.0" y="70" width="375" height="30"/>
+                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="По дням недели"/>
+                                <connections>
+                                    <action selector="onByDaysOfWeekButtonWasPressed:" destination="dPM-3x-je0" eventType="touchUpInside" id="X88-2H-vFQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sr-aH-XlE">
+                                <rect key="frame" x="0.0" y="40" width="375" height="30"/>
+                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="В дату"/>
+                                <connections>
+                                    <action selector="onInDateButtonWasPressed:" destination="dPM-3x-je0" eventType="touchUpInside" id="J88-jA-cNQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MNP-Zg-7bH" firstAttribute="trailing" secondItem="8Sr-aH-XlE" secondAttribute="trailing" id="4VC-oS-uku"/>
+                            <constraint firstItem="8Sr-aH-XlE" firstAttribute="top" secondItem="MNP-Zg-7bH" secondAttribute="top" constant="20" id="BY5-Ef-kGY"/>
+                            <constraint firstItem="tlI-mZ-r2A" firstAttribute="top" secondItem="8Sr-aH-XlE" secondAttribute="bottom" id="H6a-QE-WQT"/>
+                            <constraint firstItem="MNP-Zg-7bH" firstAttribute="trailing" secondItem="tlI-mZ-r2A" secondAttribute="trailing" id="ZHm-10-pHQ"/>
+                            <constraint firstItem="tlI-mZ-r2A" firstAttribute="leading" secondItem="MNP-Zg-7bH" secondAttribute="leading" id="uFb-5a-Hsl"/>
+                            <constraint firstItem="8Sr-aH-XlE" firstAttribute="leading" secondItem="MNP-Zg-7bH" secondAttribute="leading" id="wkw-gr-aJe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MNP-Zg-7bH"/>
+                    </view>
+                    <connections>
+                        <outlet property="byDaysOfWeekButton" destination="tlI-mZ-r2A" id="16N-Dh-dez"/>
+                        <outlet property="inDateButton" destination="8Sr-aH-XlE" id="dDI-KE-sYz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HfV-mA-xFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="197"/>
+        </scene>
+    </scenes>
+</document>

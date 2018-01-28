@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Date View Controller-->
+        <scene sceneID="u9E-BV-DVc">
+            <objects>
+                <viewController storyboardIdentifier="ChooseDateViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iBt-Xe-iJe" customClass="ChooseDateViewController" customModule="RemindMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zfS-hf-fCq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4yV-Np-Ax3">
+                                <rect key="frame" x="0.0" y="226" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="538854998.31343806">
+                                    <!--2018-01-28 17:56:38 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuY-vY-2w5">
+                                <rect key="frame" x="15" y="30" width="56" height="30"/>
+                                <state key="normal" title="Отмена"/>
+                                <connections>
+                                    <action selector="onCancelButtonWasPressed:" destination="iBt-Xe-iJe" eventType="touchUpInside" id="tqK-52-Xlm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEh-2C-hct">
+                                <rect key="frame" x="312" y="30" width="48" height="30"/>
+                                <state key="normal" title="Готово"/>
+                                <connections>
+                                    <action selector="onReadyButtonWasPressed:" destination="iBt-Xe-iJe" eventType="touchUpInside" id="guJ-DB-gkf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Cp-XH-cu7" firstAttribute="trailing" secondItem="jEh-2C-hct" secondAttribute="trailing" constant="15" id="0J5-dw-Kce"/>
+                            <constraint firstItem="BuY-vY-2w5" firstAttribute="top" secondItem="6Cp-XH-cu7" secondAttribute="top" constant="10" id="9Q0-u6-eEw"/>
+                            <constraint firstItem="jEh-2C-hct" firstAttribute="top" secondItem="6Cp-XH-cu7" secondAttribute="top" constant="10" id="CV7-Sa-r5l"/>
+                            <constraint firstItem="4yV-Np-Ax3" firstAttribute="centerX" secondItem="zfS-hf-fCq" secondAttribute="centerX" id="Idz-vy-V1R"/>
+                            <constraint firstItem="6Cp-XH-cu7" firstAttribute="trailing" secondItem="4yV-Np-Ax3" secondAttribute="trailing" id="OE1-ak-HcE"/>
+                            <constraint firstItem="4yV-Np-Ax3" firstAttribute="leading" secondItem="6Cp-XH-cu7" secondAttribute="leading" id="UfH-ne-NiX"/>
+                            <constraint firstItem="BuY-vY-2w5" firstAttribute="leading" secondItem="6Cp-XH-cu7" secondAttribute="leading" constant="15" id="WCO-zM-Wdw"/>
+                            <constraint firstItem="4yV-Np-Ax3" firstAttribute="centerY" secondItem="zfS-hf-fCq" secondAttribute="centerY" id="rNi-As-JKT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Cp-XH-cu7"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="BuY-vY-2w5" id="Qhh-DP-U95"/>
+                        <outlet property="picker" destination="4yV-Np-Ax3" id="KK4-Hy-H56"/>
+                        <outlet property="readyButton" destination="jEh-2C-hct" id="XDK-zp-Agp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqb-zG-YaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="94"/>
+        </scene>
+    </scenes>
+</document>
