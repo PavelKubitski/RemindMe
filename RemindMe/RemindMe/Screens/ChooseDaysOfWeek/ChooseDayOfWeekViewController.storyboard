@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Day Of Week View Controller-->
+        <scene sceneID="gzz-lE-JgH">
+            <objects>
+                <viewController storyboardIdentifier="ChooseDayOfWeekViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4a7-Fi-xhU" customClass="ChooseDayOfWeekViewController" customModule="RemindMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UjI-qH-81Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="id1-cU-VU6">
+                                <rect key="frame" x="0.0" y="193.5" width="375" height="280"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnU-h7-QjN">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Xul-FD-Vac"/>
+                                        </constraints>
+                                        <state key="normal" title="Monday"/>
+                                        <connections>
+                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="ycc-KJ-8du"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u6-Ic-c7M">
+                                        <rect key="frame" x="0.0" y="40" width="375" height="40"/>
+                                        <state key="normal" title="Tuesday"/>
+                                        <connections>
+                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="TA9-jJ-Svj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYc-Gh-YFx">
+                                        <rect key="frame" x="0.0" y="80" width="375" height="40"/>
+                                        <state key="normal" title="Wednesday"/>
+                                        <connections>
+                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="XVF-wg-J69"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cs-8V-ju5">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="40"/>
+                                        <state key="normal" title="Thursday"/>
+                                        <connections>
+                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="xqd-fz-aZV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAY-HP-AGY">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="40"/>
+                                        <state key="normal" title="Friday"/>
+                                        <connections>
+                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="kcU-uE-R75"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oug-gS-zka">
+                                        <rect key="frame" x="0.0" y="200" width="375" height="40"/>
+                                        <state key="normal" title="Saturday"/>
+                                        <connections>
+                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="3c4-2L-Nk9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-eK-oQh">
+                                        <rect key="frame" x="0.0" y="240" width="375" height="40"/>
+                                        <state key="normal" title="Sunday"/>
+                                        <connections>
+                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="lEj-4A-E5T"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SYc-Gh-YFx" firstAttribute="height" secondItem="EnU-h7-QjN" secondAttribute="height" id="4K3-Q9-2Mp"/>
+                                    <constraint firstItem="uAY-HP-AGY" firstAttribute="height" secondItem="EnU-h7-QjN" secondAttribute="height" id="59p-Rb-wEa"/>
+                                    <constraint firstItem="Oug-gS-zka" firstAttribute="height" secondItem="EnU-h7-QjN" secondAttribute="height" id="8UP-Q0-BkG"/>
+                                    <constraint firstItem="1u6-Ic-c7M" firstAttribute="height" secondItem="EnU-h7-QjN" secondAttribute="height" id="bDK-vo-gsT"/>
+                                    <constraint firstItem="7cs-8V-ju5" firstAttribute="height" secondItem="EnU-h7-QjN" secondAttribute="height" id="mfi-1I-tO9"/>
+                                    <constraint firstItem="bcf-eK-oQh" firstAttribute="height" secondItem="EnU-h7-QjN" secondAttribute="height" id="tZJ-pM-HV7"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="id1-cU-VU6" firstAttribute="leading" secondItem="dSq-eG-WHD" secondAttribute="leading" id="0Kw-3o-3nf"/>
+                            <constraint firstItem="id1-cU-VU6" firstAttribute="centerY" secondItem="UjI-qH-81Y" secondAttribute="centerY" id="37l-kQ-POb"/>
+                            <constraint firstItem="dSq-eG-WHD" firstAttribute="trailing" secondItem="id1-cU-VU6" secondAttribute="trailing" id="aSS-Ys-TZP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dSq-eG-WHD"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="dayButtons" destination="EnU-h7-QjN" collectionClass="NSMutableArray" id="cqh-zq-anV"/>
+                        <outletCollection property="dayButtons" destination="1u6-Ic-c7M" collectionClass="NSMutableArray" id="MHa-We-19S"/>
+                        <outletCollection property="dayButtons" destination="SYc-Gh-YFx" collectionClass="NSMutableArray" id="hs8-TL-B9G"/>
+                        <outletCollection property="dayButtons" destination="7cs-8V-ju5" collectionClass="NSMutableArray" id="pe7-U6-wmq"/>
+                        <outletCollection property="dayButtons" destination="uAY-HP-AGY" collectionClass="NSMutableArray" id="ofp-z4-LLi"/>
+                        <outletCollection property="dayButtons" destination="Oug-gS-zka" collectionClass="NSMutableArray" id="tDu-ge-VYP"/>
+                        <outletCollection property="dayButtons" destination="bcf-eK-oQh" collectionClass="NSMutableArray" id="X4K-7I-Ixi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdO-X3-ji1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="189"/>
+        </scene>
+    </scenes>
+</document>
