@@ -28,49 +28,49 @@
                                         </constraints>
                                         <state key="normal" title="Monday"/>
                                         <connections>
-                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="ycc-KJ-8du"/>
+                                            <action selector="onDayButtonWasPressed:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="ycc-KJ-8du"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u6-Ic-c7M">
                                         <rect key="frame" x="0.0" y="40" width="375" height="40"/>
                                         <state key="normal" title="Tuesday"/>
                                         <connections>
-                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="TA9-jJ-Svj"/>
+                                            <action selector="onDayButtonWasPressed:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="TA9-jJ-Svj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYc-Gh-YFx">
                                         <rect key="frame" x="0.0" y="80" width="375" height="40"/>
                                         <state key="normal" title="Wednesday"/>
                                         <connections>
-                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="XVF-wg-J69"/>
+                                            <action selector="onDayButtonWasPressed:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="XVF-wg-J69"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cs-8V-ju5">
                                         <rect key="frame" x="0.0" y="120" width="375" height="40"/>
                                         <state key="normal" title="Thursday"/>
                                         <connections>
-                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="xqd-fz-aZV"/>
+                                            <action selector="onDayButtonWasPressed:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="xqd-fz-aZV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAY-HP-AGY">
                                         <rect key="frame" x="0.0" y="160" width="375" height="40"/>
                                         <state key="normal" title="Friday"/>
                                         <connections>
-                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="kcU-uE-R75"/>
+                                            <action selector="onDayButtonWasPressed:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="kcU-uE-R75"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oug-gS-zka">
                                         <rect key="frame" x="0.0" y="200" width="375" height="40"/>
                                         <state key="normal" title="Saturday"/>
                                         <connections>
-                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="3c4-2L-Nk9"/>
+                                            <action selector="onDayButtonWasPressed:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="3c4-2L-Nk9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-eK-oQh">
                                         <rect key="frame" x="0.0" y="240" width="375" height="40"/>
                                         <state key="normal" title="Sunday"/>
                                         <connections>
-                                            <action selector="onButtonTap:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="lEj-4A-E5T"/>
+                                            <action selector="onDayButtonWasPressed:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="lEj-4A-E5T"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -83,16 +83,36 @@
                                     <constraint firstItem="bcf-eK-oQh" firstAttribute="height" secondItem="EnU-h7-QjN" secondAttribute="height" id="tZJ-pM-HV7"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ua-kX-1Qy">
+                                <rect key="frame" x="15" y="30" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="onCancelButtonWasPressed:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="q9k-fH-glp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbG-Gh-Xiz">
+                                <rect key="frame" x="326" y="30" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="onSaveButtonWasPressed:" destination="4a7-Fi-xhU" eventType="touchUpInside" id="8mw-2U-nAU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="id1-cU-VU6" firstAttribute="leading" secondItem="dSq-eG-WHD" secondAttribute="leading" id="0Kw-3o-3nf"/>
                             <constraint firstItem="id1-cU-VU6" firstAttribute="centerY" secondItem="UjI-qH-81Y" secondAttribute="centerY" id="37l-kQ-POb"/>
+                            <constraint firstItem="5ua-kX-1Qy" firstAttribute="leading" secondItem="dSq-eG-WHD" secondAttribute="leading" constant="15" id="NZ3-TR-u52"/>
                             <constraint firstItem="dSq-eG-WHD" firstAttribute="trailing" secondItem="id1-cU-VU6" secondAttribute="trailing" id="aSS-Ys-TZP"/>
+                            <constraint firstItem="5ua-kX-1Qy" firstAttribute="top" secondItem="dSq-eG-WHD" secondAttribute="top" constant="10" id="fjR-A8-YgW"/>
+                            <constraint firstItem="dSq-eG-WHD" firstAttribute="trailing" secondItem="bbG-Gh-Xiz" secondAttribute="trailing" constant="15" id="gYj-OA-Aie"/>
+                            <constraint firstItem="bbG-Gh-Xiz" firstAttribute="top" secondItem="dSq-eG-WHD" secondAttribute="top" constant="10" id="zhw-ET-YJ8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dSq-eG-WHD"/>
                     </view>
                     <connections>
+                        <outlet property="cancelButton" destination="5ua-kX-1Qy" id="fqC-xj-GQx"/>
+                        <outlet property="saveButton" destination="bbG-Gh-Xiz" id="dZf-ql-CM4"/>
                         <outletCollection property="dayButtons" destination="EnU-h7-QjN" collectionClass="NSMutableArray" id="cqh-zq-anV"/>
                         <outletCollection property="dayButtons" destination="1u6-Ic-c7M" collectionClass="NSMutableArray" id="MHa-We-19S"/>
                         <outletCollection property="dayButtons" destination="SYc-Gh-YFx" collectionClass="NSMutableArray" id="hs8-TL-B9G"/>

@@ -23,7 +23,7 @@
                                 <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="По дням недели"/>
                                 <connections>
-                                    <action selector="onByDaysOfWeekButtonWasPressed:" destination="dPM-3x-je0" eventType="touchUpInside" id="X88-2H-vFQ"/>
+                                    <action selector="onRemindInDaysOfWeekButtonWasPressed:" destination="dPM-3x-je0" eventType="touchUpInside" id="X88-2H-vFQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sr-aH-XlE">
@@ -31,7 +31,7 @@
                                 <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="В дату"/>
                                 <connections>
-                                    <action selector="onInDateButtonWasPressed:" destination="dPM-3x-je0" eventType="touchUpInside" id="J88-jA-cNQ"/>
+                                    <action selector="onRemindInDateButtonWasPressed:" destination="dPM-3x-je0" eventType="touchUpInside" id="J88-jA-cNQ"/>
                                 </connections>
                             </button>
                         </subviews>

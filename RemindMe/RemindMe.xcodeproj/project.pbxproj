@@ -21,6 +21,7 @@
 		5745F5D020265B7100D1C9AE /* ChooseDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745F5CE20265B7100D1C9AE /* ChooseDateViewController.swift */; };
 		577BDEDF20263D33008EC3FC /* ChooseDayOfWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BDEDE20263D33008EC3FC /* ChooseDayOfWeekViewController.swift */; };
 		577BDEE120263D42008EC3FC /* ChooseDayOfWeekViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577BDEE020263D42008EC3FC /* ChooseDayOfWeekViewController.storyboard */; };
+		579EE50320276D8C003BD816 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EE50220276D8C003BD816 /* DayOfWeek.swift */; };
 		57B303C0201E3C6400DC40B6 /* RemindSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B303BF201E3C6400DC40B6 /* RemindSettingsViewController.swift */; };
 		57B303C2201E3CB400DC40B6 /* RemindSettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B303C1201E3CB400DC40B6 /* RemindSettingsViewController.storyboard */; };
 		57B7D00E200B74E000DEA24A /* CreateReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7D00D200B74E000DEA24A /* CreateReminderViewController.swift */; };
@@ -45,6 +46,7 @@
 		5745F5CE20265B7100D1C9AE /* ChooseDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseDateViewController.swift; sourceTree = "<group>"; };
 		577BDEDE20263D33008EC3FC /* ChooseDayOfWeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDayOfWeekViewController.swift; sourceTree = "<group>"; };
 		577BDEE020263D42008EC3FC /* ChooseDayOfWeekViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseDayOfWeekViewController.storyboard; sourceTree = "<group>"; };
+		579EE50220276D8C003BD816 /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		57B303BF201E3C6400DC40B6 /* RemindSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindSettingsViewController.swift; sourceTree = "<group>"; };
 		57B303C1201E3CB400DC40B6 /* RemindSettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RemindSettingsViewController.storyboard; sourceTree = "<group>"; };
 		57B7D00D200B74E000DEA24A /* CreateReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			children = (
 				577BDEDE20263D33008EC3FC /* ChooseDayOfWeekViewController.swift */,
 				577BDEE020263D42008EC3FC /* ChooseDayOfWeekViewController.storyboard */,
+				579EE50220276D8C003BD816 /* DayOfWeek.swift */,
 			);
 			path = ChooseDaysOfWeek;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57BEDB4E200B9549008D11AC /* CreateReminderViewModelProtocol.swift in Sources */,
+				579EE50320276D8C003BD816 /* DayOfWeek.swift in Sources */,
 				5724C4571FFA73B300BB0FD4 /* AppDelegate.swift in Sources */,
 				57B7D00E200B74E000DEA24A /* CreateReminderViewController.swift in Sources */,
 				57BEDB4C200B9497008D11AC /* CreateReminderViewModel.swift in Sources */,

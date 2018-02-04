@@ -19,15 +19,8 @@ class CreateReminderViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     
     static func push(_ context: UINavigationController) {
-        let controller = create()
+        let controller: CreateReminderViewController = CreateReminderViewController.createFromStoryboard()
         context.pushViewController(controller, animated: true)
-    }
-    
-    private static func create() -> CreateReminderViewController {
-        let storyboard = UIStoryboard(name: "CreateReminderViewController", bundle: nil)
-        let screen = storyboard.instantiateViewController(withIdentifier: "CreateReminderViewController")
-
-        return screen as! CreateReminderViewController
     }
     
     override func viewDidLoad() {

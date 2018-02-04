@@ -9,7 +9,7 @@
 import UIKit
 
 /**
- Reminder remind date settings screen
+ Choose type of remind date
  */
 class RemindSettingsViewController: UIViewController {
     
@@ -21,26 +21,24 @@ class RemindSettingsViewController: UIViewController {
         
         context.pushViewController(controller, animated: true)
     }
-    
-//    private static func create() -> RemindSettingsViewController {
-//        let storyboard = UIStoryboard(name: "RemindSettingsViewController", bundle: nil)
-//        return storyboard.instantiateViewController(withIdentifier: "RemindSettingsViewController") as! RemindSettingsViewController
-//    }
-    
-    
-    @IBAction func onByDaysOfWeekButtonWasPressed(_ sender: UIButton) {
+
+    @IBAction func onRemindInDaysOfWeekButtonWasPressed(_ sender: UIButton) {
         guard let navController = navigationController else {
             return
         }
         
-        ChooseDayOfWeekViewController.present(navController)
+        ChooseDayOfWeekViewController.present(navController) { days in
+            
+        }
     }
     
-    @IBAction func onInDateButtonWasPressed(_ sender: UIButton) {
+    @IBAction func onRemindInDateButtonWasPressed(_ sender: UIButton) {
         guard let navController = navigationController else {
             return
         }
         
-        ChooseDateViewController.present(navController)
+        ChooseDateViewController.present(navController) { date in
+            
+        }
     }
 }
